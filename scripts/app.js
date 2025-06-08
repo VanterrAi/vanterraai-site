@@ -1,0 +1,1 @@
+console.log('Vanterra AI portal loaded');
