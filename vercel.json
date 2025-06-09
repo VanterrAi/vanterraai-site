@@ -1,1 +1,8 @@
-{ "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
+{
+  "rewrites": [
+    { "source": "/legal/tos", "destination": "/legal/tos.html" },
+    { "source": "/legal/privacy", "destination": "/legal/privacy.html" },
+    { "source": "/legal/refund", "destination": "/legal/refund.html" },
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
