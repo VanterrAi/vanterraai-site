@@ -3,33 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Vanterra AI - Hyper-realistic AI models for digital fantasy, freedom, and revenue."/>
+  <meta name="description" content="Vanterra AI – Hyper-Realistic AI Companions"/>
   <title>Vanterra AI</title>
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background-color: #0c0c0c;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.25rem;
+      margin: 0.5em 0;
+    }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: normal;
+      color: #ddd;
+    }
+    p {
+      max-width: 600px;
+      margin: 20px auto;
+      line-height: 1.5;
+    }
+    a {
+      color: #ffcc00;
+      text-decoration: none;
+      margin: 0 10px;
+      display: inline-block;
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    footer a {
+      color: #ffcc00;
+      margin: 0 6px;
+    }
+  </style>
 </head>
-<body style="background-color:#0c0c0c; color:#ffffff; font-family:sans-serif; text-align:center; padding:2rem;">
+<body>
   <header>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAllBMVEX///8AAAD09PT5+fnw8PDi4uLu7u7a2tqQkJDq6uqVlZXb29vBwcG2traioqK6urq3t7e8vLzGxsazs7PLy8vExMSWlpbR0dFubm4eHh6fn5+YmJgkJCRzc3MZGRl5eXnMzMwwMDDCwsJ4eHghISH19fWkpKScnJyJiYk/Pz/vF1hxAAAF3klEQVR4nO2dDXeqOhCAI7RRBEkRQpAoUUvS+/3P2Xl8hUlY2+1W95zpXbGbZmmG2u/N1kNkgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8UqP7X5tArvYeEvk71zPvfB41wQ3r+8HgP5e9o3snUn28yb4ZzK/qn+Ywy+q1vTeMF++RX1dmi/V9KeB3Y3eHb39PRtw/TOzvc+Atv5rqGH1UewU2i1Bf3nk6YO+yZQ+2SKp86BPLMQxZ2e8RxEz+GMi5dGxguY0ctVTT3RSsNBa1kQ3jeGDTvoZGEbcTv+dkA7EsvdHTYhK1+hOuyfQZ1xgZdeJ+kEGVjlS81ZkccT/1lLtXRX6f04A5T4Lnd5Mi84pH6MRR0x7iT0zRL2Yym59TGC6f26URMmR3k7UbFgZmqDylYy1VDe0Ysn7b2CnGXeYPCXDH8tZke9J3hmNDPZqsyS4fEdqr6ixDW+0o57koR1iTvBa0vQJZZK/2r/5XLsyROJZGEoU7QuN4bMLC69p8+LD9ZXQSlpK+jSopR1CWI/SoyR7CWK9cHYXF0nEfVLFLI6kri8dcCPpMVY2+VsZ9GZMb71NbmTe8ewGp3fiv+Od4s+Y9Szdnvh3Ph2YpV3VcvF4eqpXNxDh8/4eD9TCNcqNCHXEahv9NmY+ir8OWhWVUtHFEtZsTXKxKjWiqlS9EvW9WZq+Lvo2vcqe5m6x1d2eUxTmN8vh+Li1XZrX6ZUGOeNyTLgHa6HtPbRTalGm3EtZXaiC6B2X2LrU+7PVF6nZqjJxaShP0RYpwbouNtfkF33olXKnO5eEd+pNZzCmGVyr8ccPQGfNqXn6T5feQilNreXqPPTA/nqEP0F//w4tiVXJXifA0kPVnJazOaEv1fLxq0zmzO0L4GbM3JSvb7jG8tMiy0O2yxW3ReIbO0G2lf81GdKbeZmrXpssTT+WSPcOXKrcqgVbn7WctDpgc+M8g6FdLdQTxVWjTlfWaVdZGONn11c/YMLNmlMp9yArXnZ5bRTaPWhjkNfUb0Gy5nqh6b9XoVui+nC1UZURUXk7at7Rb4yVib8tFslKojbSPeXNVczqvSqZ6wr/q1T0fKjeGU//+BxZ6lL0GpP40dZd7JxW1aZzlbS6VDhYv2R3mrEzbWVO5j+pr8wV63b3vEy+vaqHVVmZabK49P1+nzFXamGq1qR3v6bfPNSxt3I1Tx0yo8+fMuad2m7RG9WjSfzUO7+jb5rW3v5o3lVViuzfU7Mfs4mv3UPi2eZKnxtZ4azclXU/bmFZ9tqYv5O9/veDznjI+4ai1N8p8w+fWNmLXT81HYTqjUvTfXLtvYmNvSpPnaOee4VD8nmNbeRdjX4hzDN2Vg8tljvz1d4+ZGnN+ZqptjVvf4fmX1WN9TXnpu2ePzqLbG2ja3pP3stP8ydKY/Nty0XZr6Zzfa4rR0E8Jvf9bHzPJYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4Hf4FyyUUG05XUQvAAAAAElFTkSuQmCC" alt="Vanterra AI Logo" style="max-width:300px; height:auto; margin-bottom:2rem;" />
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACt..." alt="Vanterra AI Logo" />
   </header>
-
   <main>
-    <h1 style="font-size:2rem; color:#ffffff;">Vanterra AI™</h1>
-    <h2 style="font-size:1.5rem; color:#cccccc; margin-bottom:1rem;">The Future of AI Companionship, Fantasy, and Freedom</h2>
-    <p style="max-width:600px; margin:auto; color:#bbbbbb;">
+    <h1>Vanterra AI™</h1>
+    <h2>The Future of AI Companionship, Fantasy, and Freedom</h2>
+    <p>
       Explore hyper-realistic AI companions designed to captivate, engage, and transform digital connection across every fantasy vertical.
     </p>
-
-    <div style="margin-top:2rem;">
-      <a href="https://onlyfans.com/vanterraai" style="color:#fbc531; margin-right:20px;">Join on OnlyFans</a>
-      <a href="mailto:support@vanterraai.com" style="color:#fbc531;">Contact Us</a>
+    <div>
+      <a href="https://onlyfans.com/vanterra" target="_blank">Join on OnlyFans</a>
+      <a href="mailto:support@vanterraai.com">Contact Us</a>
     </div>
   </main>
-
-  <footer style="margin-top:3rem; font-size:0.9rem; color:#888888;">
-    <a href="legal/terms.html" style="margin-right:15px; color:#fbc531;">Terms of Service</a>
-    <a href="legal/privacy.html" style="margin-right:15px; color:#fbc531;">Privacy Policy</a>
-    <a href="legal/refund.html" style="color:#fbc531;">Refund Policy</a><br/>
-    <span style="color:#666666;">© 2025 Vanterra Digital Ventures Inc. All rights reserved.</span>
+  <footer>
+    <a href="legal/terms.html">Terms of Service</a> |
+    <a href="legal/privacy.html">Privacy Policy</a> |
+    <a href="legal/refund.html">Refund Policy</a> |
+    <span>© 2025 Vanterra Digital Ventures Inc. All rights reserved.</span>
   </footer>
 </body>
 </html>
