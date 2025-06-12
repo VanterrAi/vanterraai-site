@@ -1,0 +1,47 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  color: gold;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1.live-banner {
+  font-size: 1.4em;
+  margin-top: 10px;
+}
+
+main {
+  padding: 30px 20px;
+}
+
+h2 {
+  color: white;
+  margin-top: 40px;
+}
+
+p, a {
+  color: gold;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.teaser-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.teaser-grid img {
+  height: 140px;
+  width: auto;
+  border-radius: 8px;
+  border: 1px solid gold;
+}
