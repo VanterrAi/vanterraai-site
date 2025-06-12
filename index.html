@@ -1,79 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Vanterra AI – Hyper-realistic AI companions for connection, fantasy, and freedom.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vanterra AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #0c0c0c;
-      color: white;
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #000;
+      font-family: 'Inter', sans-serif;
+      color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
       text-align: center;
     }
+
     header {
-      padding: 2rem 1rem;
+      margin-bottom: 40px;
     }
-    main {
-      padding: 1rem;
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 600;
+      color: gold;
+      letter-spacing: 2px;
     }
-    h1 {
-      font-size: 2rem;
+
+    .tagline {
+      font-size: 1.2rem;
+      color: #bbb;
+      margin-top: 10px;
     }
-    h2 {
-      font-size: 1.5rem;
-      color: #ccc;
+
+    .cta-buttons {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      max-width: 320px;
     }
-    p {
-      max-width: 600px;
-      margin: 1rem auto;
-    }
-    .buttons {
-      margin-top: 2rem;
-    }
-    .buttons a {
-      margin: 0 0.75rem;
-      color: #ffcc00;
+
+    .cta-buttons a {
+      background-color: gold;
+      color: #000;
       text-decoration: none;
+      font-weight: 600;
+      padding: 15px 20px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
     }
+
+    .cta-buttons a:hover {
+      background-color: #e6c200;
+    }
+
     footer {
-      margin-top: 3rem;
+      position: absolute;
+      bottom: 30px;
       font-size: 0.9rem;
-      color: #888;
+      color: #666;
     }
-    footer a {
-      color: #ffcc00;
-      margin: 0 0.5rem;
-      text-decoration: none;
+
+    @media(min-width: 768px) {
+      .cta-buttons {
+        flex-direction: row;
+        justify-content: center;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Vanterra AI™</h1>
+    <div class="logo">VANTERRA</div>
+    <div class="tagline">Where Intelligence Meets Influence</div>
   </header>
 
-  <main>
-    <h2>The Future of AI Companionship, Fantasy, and Freedom</h2>
-    <p>
-      Explore hyper-realistic AI companions designed to captivate, engage, and transform digital connection across every fantasy vertical.
-    </p>
-    <div class="buttons">
-      <a href="https://onlyfans.com" target="_blank">Join on OnlyFans</a>
-      <a href="mailto:support@vanterraai.com">Contact Us</a>
-    </div>
-  </main>
+  <div class="cta-buttons">
+    <a href="https://onlyfans.com/vanterraai" target="_blank">View Our Models</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
 
   <footer>
-    <a href="legal/terms.html">Terms of Service</a>
-    <a href="legal/privacy.html">Privacy Policy</a>
-    <a href="legal/refund.html">Refund Policy</a>
-    <div style="margin-top: 1rem;">
-      © 2025 Vanterra Digital Ventures Inc. All rights reserved.
-    </div>
+    &copy; 2025 Vanterra Digital Ventures Inc. All rights reserved.
   </footer>
+
 </body>
 </html>
