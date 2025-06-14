@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #0a0a0a;
+  color: #f0eae2;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  padding: 2rem 1rem 1rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e6d8c3;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: #aaa;
+  margin-top: 0.5rem;
+}
+
+.button-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.btn {
+  padding: 0.9rem 1.8rem;
+  background-color: #2a2a2a;
+  color: #f0eae2;
+  border: 1px solid #555;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #111;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.socials img {
+  height: 26px;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+.vertical-links {
+  margin-top: 1rem;
+}
+
+.vertical-links a {
+  margin: 0 10px;
+  color: #e6d8c3;
+  text-decoration: none;
+}
+
+.vertical-links a:hover {
+  text-decoration: underline;
+}
